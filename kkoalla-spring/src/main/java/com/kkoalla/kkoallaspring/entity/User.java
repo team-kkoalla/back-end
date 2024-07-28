@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Table(name = "user")
+@Table(name = "users")
 public class User extends BaseEntity {
 
     @Id
@@ -32,6 +32,6 @@ public class User extends BaseEntity {
     @OneToMany(mappedBy = "user")
     private List<Badge> badges = new ArrayList<>();
 
-    @OneToMany(mappedBy = "brewery")
-    private List<Booking> booking;
+    @OneToMany(mappedBy = "user")
+    private List<Booking> bookings;
 }
