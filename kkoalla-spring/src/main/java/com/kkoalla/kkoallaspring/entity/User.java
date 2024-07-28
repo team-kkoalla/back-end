@@ -6,6 +6,9 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -20,9 +23,15 @@ public class User extends BaseEntity {
     @Column(nullable = false, unique = true)
     private String phone;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true, length = 45)
     private String email;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true, length = 10)
     private String nickname;
+
+    @OneToMany(mappedBy = "user")
+    private List<Badge> badges = new ArrayList<>();
+
+    @OneToMany(mappedBy = "brewery")
+    private List<Booking> booking;
 }
