@@ -23,7 +23,7 @@ public class Brewery extends BaseEntity {
     private BreweryInfo breweryInfo;
 
     @OneToMany(mappedBy = "brewery", cascade = CascadeType.ALL, orphanRemoval = true)
-    List<Booking> bookings = new ArrayList<>();
+    private List<Booking> bookings = new ArrayList<>();
 
     public void addBooking(Booking booking) {
         bookings.add(booking);
