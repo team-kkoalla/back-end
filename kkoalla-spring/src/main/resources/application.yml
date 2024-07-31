@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: kkoalla-spring
+
+kakao:
+  client_id: 421bdf7d447d8772a2bba2be5997d5f2
+  redirect_uri: http://localhost:8080/oauth
