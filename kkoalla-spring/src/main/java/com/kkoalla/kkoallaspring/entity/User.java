@@ -1,5 +1,7 @@
 package com.kkoalla.kkoallaspring.entity;
 
+import com.kkoalla.kkoallaspring.dto.request.CreateUserRequestDto;
+import com.kkoalla.kkoallaspring.dto.response.KakaoUserInfoResponseDto;
 import com.kkoalla.kkoallaspring.entity.base.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -29,9 +31,19 @@ public class User extends BaseEntity {
     @Column(nullable = false, unique = true, length = 10)
     private String nickname;
 
+    @Column(nullable = false)
+    private Long kakaoId;
+
     @OneToMany(mappedBy = "user")
     private List<Badge> badges = new ArrayList<>();
 
     @OneToMany(mappedBy = "user")
-    private List<Booking> bookings;
+    private List<Booking> bookings = new ArrayList<>();
+
+    public User(KakaoUserInfoResponseDto kakaoUserInfoResponseDto, CreateUserRequestDto createUserRequestDto) {
+        this.phone = createUserRequestDto.getPhone();
+        this.email = kakaoUserInfoResponseDto.getKakao_account().getEmail();
+        this.nickname = createUserRequestDto.getNickname();
+        this.kakaoId = kakaoUserInfoResponseDto.getId();
+    }
 }
