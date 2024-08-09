@@ -21,8 +21,16 @@ public class UserService {
     }
 
     @Transactional
-    public void CreateUser(KakaoUserInfoResponseDto kakaoUserInfoResponseDto, CreateUserRequestDto createUserRequestDto) {
+    public void createUser(KakaoUserInfoResponseDto kakaoUserInfoResponseDto, CreateUserRequestDto createUserRequestDto) {
         User user = new User(kakaoUserInfoResponseDto, createUserRequestDto);
         userRepository.save(user);
+    }
+
+    public User findByKakaoId(Long kakaoId) {
+        return userRepository.findByKakaoId(kakaoId);
+    }
+
+    public boolean existsByKakaoId(Long kakaoId) {
+        return userRepository.existsByKakaoId(kakaoId);
     }
 }
