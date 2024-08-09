@@ -1,5 +1,6 @@
 package com.kkoalla.kkoallaspring.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.kkoalla.kkoallaspring.entity.base.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -17,15 +18,52 @@ public class BreweryInfo extends BaseEntity {
     @Column(name = "brewery_info_id")
     private Long id;
 
-    @Column(name = "program_name")
+    @JsonProperty("체험프로그램명")
     private String programName;
 
-    @Column(name = "program_explanation")
-    private String programExplanation;
+    @JsonProperty("양조장명")
+    private String breweryName;
 
-    private int min;
-    private int max;
+    @JsonProperty("양조장주소")
+    private String breweryAddress;
 
-    private Float latitude;
-    private Float longitude;
+    @JsonProperty("내용")
+    private String content;
+
+    @JsonProperty("소요시간")
+    private String duration;
+
+    @JsonProperty("연락처")
+    private String contactNumber;
+
+    @JsonProperty("예약방문가능여부")
+    private String reservationAvailable;
+
+    @JsonProperty("장소")
+    private String location;
+
+    @JsonProperty("주종")
+    private String alcoholType;
+
+    @JsonProperty("투어비용(원)")
+    private Integer tourCost;
+
+    @JsonProperty("홈페이지")
+    private String website;
+
+
+    public BreweryInfo(String programName, String breweryName, String breweryAddress, String content, String duration, String contactNumber, String reservationAvailable, String location, String alcoholType, Integer tourCost, String website) {
+        this.programName = programName;
+        this.breweryName = breweryName;
+        this.breweryAddress = breweryAddress;
+        this.content = content;
+        this.duration = duration;
+        this.contactNumber = contactNumber;
+        this.reservationAvailable = reservationAvailable;
+        this.location = location;
+        this.alcoholType = alcoholType;
+        this.tourCost = tourCost;
+        this.website = website;
+    }
+
 }
