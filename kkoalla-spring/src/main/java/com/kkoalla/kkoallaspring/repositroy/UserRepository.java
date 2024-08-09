@@ -18,4 +18,12 @@ public class UserRepository {
     public User findById(Long id) {
         return em.find(User.class, id);
     }
+
+    public User findByKakaoId(Long kakaoId) {
+        return em.find(User.class, kakaoId);
+    }
+
+    public boolean existsByKakaoId(Long kakaoId) {
+        return em.find(User.class, kakaoId).getKakaoId().equals(kakaoId);
+    }
 }

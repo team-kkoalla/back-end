@@ -97,4 +97,20 @@ public class KakaoService {
 
         return userInfo;
     }
+
+    public Long kakaoLogout(String accessToken) throws BaseException, IOException {
+        KakaoUserInfoResponseDto info = getUserInfoByKakaoToken(accessToken);
+        return webClient.post()
+                .uri(uriBuilder -> uriBuilder
+                        .scheme("https")
+                        .path("/v1/user/logout")
+                        .build()
+                )
+                .header(HttpHeaders.AUTHORIZATION, "Bearer " + accessToken)
+                .header(HttpHeaders.CONTENT_TYPE, HttpHeaderValues.APPLICATION_X_WWW_FORM_URLENCODED.toString())
+                .retrieve()
+                .onStatus(HttpStatusCode::is4xxClientError, clientResponse -> Mono.error(new RuntimeException("Invalid Params")))
+                .bodyToMono(Long.class)
+                .block();
+    }
 }
