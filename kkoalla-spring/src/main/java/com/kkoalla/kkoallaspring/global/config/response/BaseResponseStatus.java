@@ -16,8 +16,10 @@ public enum BaseResponseStatus {
      */
     // Common
     REQUEST_ERROR(false, 400, "입력값을 확인해주세요."),
-    // Common
     RESPONSE_ERROR(false, 401, "값을 불러오는데 실패하였습니다."),
+
+    POST_USERS_NO_EXISTS_USER(false, 404, "존재하지 않는 회원입니다."),
+
 
     /**
      * 500 : Database, Server 오류
