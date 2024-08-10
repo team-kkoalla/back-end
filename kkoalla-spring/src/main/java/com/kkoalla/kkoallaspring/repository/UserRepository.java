@@ -1,4 +1,4 @@
-package com.kkoalla.kkoallaspring.repositroy;
+package com.kkoalla.kkoallaspring.repository;
 
 import com.kkoalla.kkoallaspring.entity.User;
 import jakarta.persistence.EntityManager;

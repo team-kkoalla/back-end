@@ -3,7 +3,7 @@ package com.kkoalla.kkoallaspring.service;
 import com.kkoalla.kkoallaspring.dto.request.CreateUserRequestDto;
 import com.kkoalla.kkoallaspring.dto.response.KakaoUserInfoResponseDto;
 import com.kkoalla.kkoallaspring.entity.User;
-import com.kkoalla.kkoallaspring.repositroy.UserRepository;
+import com.kkoalla.kkoallaspring.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
