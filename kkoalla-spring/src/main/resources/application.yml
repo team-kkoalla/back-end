@@ -1,6 +1,34 @@
 spring:
   application:
     name: kkoalla-spring
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/jpakkoalla
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        default_batch_fetch_size: 100
+api:
+  base-url: https://api.odcloud.kr/api/15089109/v1/uddi:c7468573-84ff-4a92-a84b-884439ce23d3
+  service-key: pRf%2B4%2FO3yi5ghMiMnogtjJ%2BeywrxfWIHFuFim%2F5w002UPEh6mv1qz6iidgZK6l9ZmHVBKisH8XgFpAkIaSd3qw%3D%3D
+
+logging:
+  level:
+    root: INFO
+    com.kkoalla.kkoallaspring: DEBUG
+    org.hibernate.SQL: DEBUG  # Hibernate SQL 로그를 DEBUG 레벨로 설정
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE  # SQL 파라미터 바인딩 로그도 출력
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"  # 콘솔 로그 출력 형식 설정
+  file:
+    name: logs/app.log  # 로그 파일로 출력하고 싶다면 이 옵션 사용
 
 kakao:
   client_id: 421bdf7d447d8772a2bba2be5997d5f2
