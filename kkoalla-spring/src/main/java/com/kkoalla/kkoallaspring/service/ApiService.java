@@ -1,6 +1,5 @@
 package com.kkoalla.kkoallaspring.service;
 
-
 import com.kkoalla.kkoallaspring.config.ApiConfig;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,8 +17,8 @@ import java.net.URL;
 public class ApiService {
     private final ApiConfig apiConfig;
 
-    public JSONArray fetchData(int page, int perPage) {
-        JSONArray dataArray = new JSONArray();
+    public JSONObject fetchData(int page, int perPage) {
+        JSONObject dataObject = new JSONObject();
 
         try {
             String urlStr = apiConfig.getFullUrl(page, perPage);
@@ -34,14 +33,13 @@ public class ApiService {
             String result = sb.toString();
 
             // JSON 파싱
-            JSONObject jsonObject = new JSONObject(result);
-            dataArray = jsonObject.getJSONArray("data");
+            dataObject = new JSONObject(result);
 
         } catch (Exception e) {
             e.printStackTrace();
             log.error("Error occurred while fetching data", e);
         }
 
-        return dataArray;
+        return dataObject;
     }
 }

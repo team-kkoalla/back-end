@@ -4,16 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-
 public class ProgramInfoDTO {
     private String programName;
     private String breweryName;
-    private String breweryAddress;
+    private String region;
 
 
-    public ProgramInfoDTO(String programName, String breweryName, String breweryAddress){
+    public ProgramInfoDTO(String programName, String breweryName, String region){
         this.programName = programName;
         this.breweryName = breweryName;
-        this.breweryAddress = breweryAddress;
+        this.region = region;
     }
 }

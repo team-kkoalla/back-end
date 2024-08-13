@@ -18,6 +18,10 @@ public class BreweryInfo extends BaseEntity {
     @Column(name = "brewery_info_id")
     private Long id;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "region_id")
+    private RegionId regionId ;
+
     @JsonProperty("체험프로그램명")
     private String programName;
 
@@ -25,7 +29,8 @@ public class BreweryInfo extends BaseEntity {
     private String breweryName;
 
     @JsonProperty("양조장주소")
-    private String breweryAddress;
+
+    private String region;
 
     @JsonProperty("내용")
     private String content;
@@ -51,11 +56,12 @@ public class BreweryInfo extends BaseEntity {
     @JsonProperty("홈페이지")
     private String website;
 
-
-    public BreweryInfo(String programName, String breweryName, String breweryAddress, String content, String duration, String contactNumber, String reservationAvailable, String location, String alcoholType, Integer tourCost, String website) {
+    public BreweryInfo(String programName, String breweryName, String region, String content, String duration,
+                       String contactNumber, String reservationAvailable, String location, String alcoholType,
+                       Integer tourCost, String website, RegionId regionId) {
         this.programName = programName;
         this.breweryName = breweryName;
-        this.breweryAddress = breweryAddress;
+        this.region = region;
         this.content = content;
         this.duration = duration;
         this.contactNumber = contactNumber;
@@ -64,6 +70,12 @@ public class BreweryInfo extends BaseEntity {
         this.alcoholType = alcoholType;
         this.tourCost = tourCost;
         this.website = website;
+        this.regionId =regionId;
+
     }
+
+
+
+
 
 }
