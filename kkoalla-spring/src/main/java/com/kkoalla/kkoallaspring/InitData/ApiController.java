@@ -1,4 +1,4 @@
-package com.kkoalla.kkoallaspring.controller;
+package com.kkoalla.kkoallaspring.InitData;
 
 import com.kkoalla.kkoallaspring.entity.BreweryInfo;
 import com.kkoalla.kkoallaspring.entity.RegionId;

@@ -1,38 +1,38 @@
 package com.kkoalla.kkoallaspring.controller;
 
-import ch.qos.logback.classic.Logger;
 import com.kkoalla.kkoallaspring.dto.response.ProgramInfoDTO;
 import com.kkoalla.kkoallaspring.repository.BreweryInfoRepository;
-import com.kkoalla.kkoallaspring.service.ApiService;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.json.JSONArray;
-import org.json.JSONObject;
+import com.kkoalla.kkoallaspring.service.BreweryInfoService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequiredArgsConstructor
-@Slf4j
+@RequestMapping("/api/brewery")
 public class BreweryListController {
-//    private final BreweryInfoRepository breweryInfoRepository;
-//
-//    @GetMapping("/api/program")
-//
-//
-//    public List<ProgramInfoDTO> getAllPrograms() {
-//        try {
-//            return breweryInfoRepository.findByBreweryName();
-//        } catch (Exception e) {
-//            log.error("Error occurred while fetching or processing data", e);
-//            return List.of(); // 에러 발생 시 빈 리스트 반환
-//        }
-//    }
 
+    private final BreweryInfoService breweryInfoService;
 
+    @Autowired
+    public BreweryListController (BreweryInfoService breweryInfoService){
+        this.breweryInfoService =breweryInfoService;
+    }
+
+    @GetMapping("/programs")
+    public ResponseEntity<List<ProgramInfoDTO>> getBreweryPrograms() {
+        List<ProgramInfoDTO> programs = breweryInfoService.findByBreweryName();
+        return ResponseEntity.ok(programs);
+    }
+    @GetMapping("{regionId}/programs")
+    public ResponseEntity<List<ProgramInfoDTO>> getProgramsByBreweryId(@PathVariable("regionId") Long regionId) {
+        List<ProgramInfoDTO> programs = breweryInfoService.findProgramsByBreweryId(regionId);
+        return ResponseEntity.ok(programs);
+    }
 
 }
