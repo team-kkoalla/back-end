@@ -1,5 +1,6 @@
 package com.kkoalla.kkoallaspring.controller;
 
+import com.kkoalla.kkoallaspring.dto.response.BreweryInfoDTO;
 import com.kkoalla.kkoallaspring.dto.response.ProgramInfoDTO;
 import com.kkoalla.kkoallaspring.repository.BreweryInfoRepository;
 import com.kkoalla.kkoallaspring.service.BreweryInfoService;
@@ -33,6 +34,15 @@ public class BreweryListController {
     public ResponseEntity<List<ProgramInfoDTO>> getProgramsByBreweryId(@PathVariable("regionId") Long regionId) {
         List<ProgramInfoDTO> programs = breweryInfoService.findProgramsByBreweryId(regionId);
         return ResponseEntity.ok(programs);
+    }
+
+    @GetMapping("/{regionId}/programs/{breweryInfoId}/programDetail")
+    public ResponseEntity<List<BreweryInfoDTO>> getBreweryInfoDetailByRegionAndBreweryId(
+            @PathVariable("regionId") Long regionId,
+            @PathVariable("breweryInfoId") Long breweryInfoId) {
+
+        List<BreweryInfoDTO> breweryInfoDetails = breweryInfoService.findBreweryInfoDetailByRegionIdAndBreweryInfoId(regionId, breweryInfoId);
+        return ResponseEntity.ok(breweryInfoDetails);
     }
 
 }

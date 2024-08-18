@@ -32,16 +32,16 @@ public class Booking extends BaseEntity {
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "brewery_id")
-    private Brewery brewery;
+    @JoinColumn(name = "brewery_info_id")
+    private BreweryInfo breweryInfo;
 
-    public Booking(String userName, String phone, String bookingDate, int peopleCount, BookingStatus status, User user, Brewery brewery) {
+    public Booking(String userName, String phone, String bookingDate, int peopleCount, BookingStatus status, User user, BreweryInfo breweryInfo) {
         this.userName = userName;
         this.phone = phone;
         this.bookingDate = bookingDate;
         this.peopleCount = peopleCount;
         this.status = status;
         this.user = user;
-        this.brewery = brewery;
+        this.breweryInfo = breweryInfo ;
     }
 }

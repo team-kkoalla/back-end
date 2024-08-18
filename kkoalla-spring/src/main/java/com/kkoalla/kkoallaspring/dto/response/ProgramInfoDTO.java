@@ -1,5 +1,6 @@
 package com.kkoalla.kkoallaspring.dto.response;
 
+import com.kkoalla.kkoallaspring.entity.BreweryInfo;
 import com.kkoalla.kkoallaspring.entity.RegionId;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,12 +15,11 @@ public class ProgramInfoDTO {
 
 
 
-    public ProgramInfoDTO(String programName, String breweryName, String region,Long regionId){
-        this.programName = programName;
-        this.breweryName = breweryName;
-        this.region = region;
-        this.regionId =regionId;
-
+    public ProgramInfoDTO(BreweryInfo breweryInfo){
+        this.programName = breweryInfo.getProgramName();
+        this.breweryName = breweryInfo.getBreweryName();
+        this.region = breweryInfo.getRegion();
+        this.regionId = breweryInfo.getRegionId().getId();
 
     }
 }

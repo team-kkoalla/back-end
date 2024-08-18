@@ -78,4 +78,5 @@ public class BreweryInfo extends BaseEntity {
 
 
 
+
 }

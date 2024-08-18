@@ -1,6 +1,7 @@
 package com.kkoalla.kkoallaspring.dto.response;
 
 
+import com.kkoalla.kkoallaspring.entity.BreweryInfo;
 import lombok.Data;
 
 @Data
@@ -20,18 +21,18 @@ public class BreweryInfoDTO {
     private  String website;
     private Long regionId;
 
-    public BreweryInfoDTO() {
-        this.programName = programName;
-        this.breweryName = breweryName;
-        this.region= region;
-        this.content = content;
-        this.duration = duration;
-        this.contactNumber = contactNumber;
-        this.reservationAvailable = reservationAvailable;
-        this.location = location;
-        this.alcoholType = alcoholType;
-        this.tourCost = tourCost;
-        this.website = website;
-        this.regionId =regionId;
+    public BreweryInfoDTO(BreweryInfo breweryInfo) {
+        this.programName = breweryInfo.getProgramName();
+        this.breweryName = breweryInfo.getBreweryName();
+        this.region = breweryInfo.getRegion();
+        this.content = breweryInfo.getContent();
+        this.duration = breweryInfo.getDuration();
+        this.contactNumber = breweryInfo.getContactNumber();
+        this.reservationAvailable = breweryInfo.getReservationAvailable();
+        this.location = breweryInfo.getLocation();
+        this.alcoholType = breweryInfo.getAlcoholType();
+        this.tourCost = breweryInfo.getTourCost();
+        this.website = breweryInfo.getWebsite();
+        this.regionId = breweryInfo.getRegionId().getId();
     }
 }
