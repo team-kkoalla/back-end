@@ -1,7 +1,9 @@
 package com.kkoalla.kkoallaspring.controller;
 
+import com.fasterxml.jackson.databind.ser.Serializers;
 import com.kkoalla.kkoallaspring.dto.response.BreweryInfoDTO;
 import com.kkoalla.kkoallaspring.dto.response.ProgramInfoDTO;
+import com.kkoalla.kkoallaspring.global.config.execption.BaseException;
 import com.kkoalla.kkoallaspring.repository.BreweryInfoRepository;
 import com.kkoalla.kkoallaspring.service.BreweryInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +28,7 @@ public class BreweryListController {
     }
 
     @GetMapping("/programs")
-    public ResponseEntity<List<ProgramInfoDTO>> getBreweryPrograms() {
+    public ResponseEntity<List<ProgramInfoDTO>> getBreweryPrograms() throws BaseException {
         List<ProgramInfoDTO> programs = breweryInfoService.findByBreweryName();
         return ResponseEntity.ok(programs);
     }
@@ -44,5 +46,6 @@ public class BreweryListController {
         List<BreweryInfoDTO> breweryInfoDetails = breweryInfoService.findBreweryInfoDetailByRegionIdAndBreweryInfoId(regionId, breweryInfoId);
         return ResponseEntity.ok(breweryInfoDetails);
     }
+
 
 }

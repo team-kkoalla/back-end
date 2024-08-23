@@ -23,18 +23,7 @@ public class BreweryInfoRepositoryCustomImpl implements BreweryInfoRepositoryCus
                         BreweryInfo.class)
                 .getResultList();
 
-//        // 필요한 필드를 DTO로 변환
-//        List<ProgramInfoDTO> programInfoDTOS = new ArrayList<>();
-//        for (BreweryInfo breweryInfo : resultList) {
-//            ProgramInfoDTO programInfoDTO = new ProgramInfoDTO(
-//                    breweryInfo.getProgramName(),
-//                    breweryInfo.getBreweryName(),
-//                    breweryInfo.getRegion(),
-//                    breweryInfo.getRegionId().getId()
-//            );
-//            programInfoDTOS.add(programInfoDTO);
-//        }
-//        return programInfoDTOS;
+
     }
 
     @Override
@@ -48,17 +37,7 @@ public class BreweryInfoRepositoryCustomImpl implements BreweryInfoRepositoryCus
                 .setParameter("regionId", regionId)
                 .getResultList();
 
-//        List<ProgramInfoDTO> programInfoDTOS = new ArrayList<>();
-//        for (BreweryInfo breweryInfo : resultList) {
-//            ProgramInfoDTO programInfoDTO = new ProgramInfoDTO(
-//                    breweryInfo.getProgramName(),
-//                    breweryInfo.getBreweryName(),
-//                    breweryInfo.getRegion(),
-//                    breweryInfo.getRegionId().getId()
-//            );
-//            programInfoDTOS.add(programInfoDTO);
-//        }
-//        return programInfoDTOS;
+
     }
 
     @Override
@@ -76,6 +55,14 @@ public class BreweryInfoRepositoryCustomImpl implements BreweryInfoRepositoryCus
                 .setParameter("regionId", regionId)
                 .setParameter("breweryInfoId", breweryInfoId)
                 .getResultList();  // 여러 결과를 List로 반환
+    }
+
+    @Override
+    public List<BreweryInfo> findProgramId(Long breweryInfoId){
+        return em.createQuery(
+                "SELECT b FROM BreweryInfo b WHERE b.id = :breweryInfoId",BreweryInfo.class)
+                .setParameter("breweryInfoId",breweryInfoId)
+                .getResultList();
     }
 
 

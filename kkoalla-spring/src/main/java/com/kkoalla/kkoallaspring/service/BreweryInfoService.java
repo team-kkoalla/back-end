@@ -12,4 +12,5 @@ public interface BreweryInfoService {
     List<ProgramInfoDTO> findProgramsByBreweryId(Long regionId);
     List<BreweryInfoDTO> findAllBreweryInfoDTOs();
     List<BreweryInfoDTO>  findBreweryInfoDetailByRegionIdAndBreweryInfoId(Long regionId,Long breweryInfoId);
+    List<ProgramInfoDTO> findProgramId(Long breweryInfoId);
 }

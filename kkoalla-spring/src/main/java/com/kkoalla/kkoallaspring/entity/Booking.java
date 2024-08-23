@@ -2,15 +2,12 @@ package com.kkoalla.kkoallaspring.entity;
 
 import com.kkoalla.kkoallaspring.entity.base.BaseEntity;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Data
+@Getter
 public class Booking extends BaseEntity {
 
     @Id
@@ -23,6 +20,8 @@ public class Booking extends BaseEntity {
     private String phone;
     private String bookingDate;
     private int peopleCount;
+    private String programTime;
+    private String countNumber;
 
     @Enumerated(EnumType.STRING)
     private BookingStatus status;
@@ -35,11 +34,13 @@ public class Booking extends BaseEntity {
     @JoinColumn(name = "brewery_info_id")
     private BreweryInfo breweryInfo;
 
-    public Booking(String userName, String phone, String bookingDate, int peopleCount, BookingStatus status, User user, BreweryInfo breweryInfo) {
+    public Booking(String userName, String phone, String bookingDate, int peopleCount, String programTime,String countNumber, BookingStatus status, User user, BreweryInfo breweryInfo) {
         this.userName = userName;
         this.phone = phone;
         this.bookingDate = bookingDate;
         this.peopleCount = peopleCount;
+        this.programTime= programTime;
+        this.countNumber = countNumber;
         this.status = status;
         this.user = user;
         this.breweryInfo = breweryInfo ;

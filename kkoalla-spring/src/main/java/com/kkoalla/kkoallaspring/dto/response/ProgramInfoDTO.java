@@ -7,6 +7,7 @@ import lombok.Data;
 
 @Data
 public class ProgramInfoDTO {
+    private Long id;
     private String programName;
     private String breweryName;
     private String region;
@@ -16,6 +17,7 @@ public class ProgramInfoDTO {
 
 
     public ProgramInfoDTO(BreweryInfo breweryInfo){
+        this.id=breweryInfo.getId();
         this.programName = breweryInfo.getProgramName();
         this.breweryName = breweryInfo.getBreweryName();
         this.region = breweryInfo.getRegion();

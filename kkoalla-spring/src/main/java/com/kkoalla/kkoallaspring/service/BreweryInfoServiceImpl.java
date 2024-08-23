@@ -52,4 +52,12 @@ public class BreweryInfoServiceImpl implements BreweryInfoService{
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public List<ProgramInfoDTO> findProgramId(Long breweryInfoId){
+        List<BreweryInfo> breweryInfos = breweryInfoRepository.findProgramId(breweryInfoId);
+        return breweryInfos.stream()
+                .map(ProgramInfoDTO::new)
+                .collect(Collectors.toList());
+    }
+
 }

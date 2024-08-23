@@ -11,4 +11,5 @@ public interface BreweryInfoRepositoryCustom {
     List<BreweryInfo> findProgramsByBreweryId(Long regionId);
     List<BreweryInfo> findAllBreweryInfo();
     List<BreweryInfo> findBreweryInfoByRegionIdAndBreweryInfoId(Long regionId,Long breweryInfoId);
+    List<BreweryInfo> findProgramId(Long breweryId);
 }
