@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1be5483-0f7c-4662-b732-34903c5a68d2" name="Changes" comment="feat: hello">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/kkoalla.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/KkoallaSpringApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/config/ApiConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/controller/ApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/controller/BreweryListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/dto/request/CreateUserRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/dto/request/LoginDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/dto/response/BreweryInfoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/dto/response/KakaoAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/dto/response/KakaoTokenResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/dto/response/KakaoUserInfoResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/dto/response/LoginResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/dto/response/ProgramInfoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/dto/response/UserProfileResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/entity/Badge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/entity/BadgeStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/entity/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/entity/BookingStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/entity/Brewery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/entity/BreweryInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/entity/base/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/global/config/execption/BaseException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/global/config/response/BaseResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/global/config/response/BaseResponseStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/repository/BreweryInfoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/service/ApiService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/service/KakaoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kkoalla/kkoallaspring/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kkoalla/kkoallaspring/KkoallaSpringApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kkoalla-spring" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kkoalla-spring" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kkoalla-spring" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Tnalxmsk&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/team-kkoalla/back-end.git&quot;,
+    &quot;accountId&quot;: &quot;eedc9689-8ced-441a-812f-2b607b6de2c0&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2joSNZzeR4sF6mGnJKOjbgTje59" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build kkoalla-spring.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.kkoalla-spring [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.kkoalla-spring [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.KkoallaSpringApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/user&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/minsu/Desktop/spring-project/back-end/kkoalla-spring&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ],
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;/Users/minsu/.gradle&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kkoalla.kkoallaspring.dto.response" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.KkoallaSpringApplication">
+    <configuration name="kkoalla-spring [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="kkoalla-spring [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="KkoallaSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="kkoalla-spring.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kkoalla.kkoallaspring.KkoallaSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.kkoalla-spring [bootJar]" />
+        <item itemvalue="Gradle.kkoalla-spring [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1be5483-0f7c-4662-b732-34903c5a68d2" name="Changes" comment="" />
+      <created>1722051897147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722051897147</updated>
+      <workItem from="1722051898409" duration="1773000" />
+      <workItem from="1722053933941" duration="2530000" />
+      <workItem from="1722085793273" duration="1802000" />
+      <workItem from="1722153221540" duration="9807000" />
+      <workItem from="1722166830512" duration="109000" />
+      <workItem from="1722230115472" duration="9908000" />
+      <workItem from="1722318294871" duration="6104000" />
+      <workItem from="1722402389068" duration="7933000" />
+      <workItem from="1722411322398" duration="2180000" />
+      <workItem from="1722595334124" duration="729000" />
+      <workItem from="1722599139430" duration="810000" />
+      <workItem from="1722767567406" duration="3293000" />
+      <workItem from="1722771430593" duration="2616000" />
+      <workItem from="1723010899803" duration="7834000" />
+      <workItem from="1723021386540" duration="880000" />
+      <workItem from="1723168553092" duration="277000" />
+      <workItem from="1723177917598" duration="942000" />
+      <workItem from="1723288836878" duration="847000" />
+      <workItem from="1723363717837" duration="3572000" />
+      <workItem from="1723448760450" duration="5165000" />
+      <workItem from="1724153513115" duration="77000" />
+      <workItem from="1724154842933" duration="315000" />
+      <workItem from="1726994270492" duration="220000" />
+      <workItem from="1726995817854" duration="12000" />
+      <workItem from="1726997478753" duration="4725000" />
+      <workItem from="1727007095354" duration="425000" />
+      <workItem from="1728032529484" duration="5509000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: User Entity&#10;&#10;User 객체 추가">
+      <option name="closed" value="true" />
+      <created>1722086993639</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722086993639</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: Brewery 엔티티 추가&#10;&#10;양조장 객체">
+      <option name="closed" value="true" />
+      <created>1722158641309</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722158641309</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: BreweryInfo 엔티티 추가&#10;&#10;양조장 정보 객체">
+      <option name="closed" value="true" />
+      <created>1722158654804</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722158654804</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: Booking 엔티티 추가&#10;&#10;예약 객체">
+      <option name="closed" value="true" />
+      <created>1722158710782</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722158710782</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: Badge 엔티티 추가&#10;&#10;뱃지 객체">
+      <option name="closed" value="true" />
+      <created>1722158723629</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722158723629</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: User 엔티티 수정&#10;&#10;뱃지, 예약 프로퍼티 추가">
+      <option name="closed" value="true" />
+      <created>1722158820975</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722158820975</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: User 엔티티 mappedBy 수정 &#10;&#10;brewery -&gt; User 로 변경">
+      <option name="closed" value="true" />
+      <created>1722166139064</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722166139064</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor: Brewery 프로퍼티 네임 수정&#10;&#10;booking -&gt; bookings">
+      <option name="closed" value="true" />
+      <created>1722166171129</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722166171129</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: Base Setting">
+      <option name="closed" value="true" />
+      <created>1722408624693</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408624693</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: User constructor 추가&#10;&#10;회원가입 시 사용할 constructor">
+      <option name="closed" value="true" />
+      <created>1722408674268</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408674268</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: User Service 구현&#10;&#10;유저 생성 기능 구현">
+      <option name="closed" value="true" />
+      <created>1722408710779</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408710779</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: User Repository 구현&#10;&#10;유저 저장 기능 구현">
+      <option name="closed" value="true" />
+      <created>1722408730944</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408730944</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: User Controller 추가&#10;&#10;카카오 + 회원가입 로직 구현">
+      <option name="closed" value="true" />
+      <created>1722408766084</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408766084</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: Kakao Service 추가&#10;&#10;Access 토큰을 통한 카카오 유저 정보 조회 기능 구현">
+      <option name="closed" value="true" />
+      <created>1722408810850</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408810850</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: Kakao 관련 dto 추가">
+      <option name="closed" value="true" />
+      <created>1722408827584</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408827584</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: User 생성 Dto 구현">
+      <option name="closed" value="true" />
+      <created>1722408842400</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408842400</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: BaseResponseStatus 추가&#10;&#10;존재하지 않는 회원 오류 추가">
+      <option name="closed" value="true" />
+      <created>1723168649694</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1723168649695</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: LoginDto 추가">
+      <option name="closed" value="true" />
+      <created>1723168669587</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1723168669587</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: LoginResponseDto 추가">
+      <option name="closed" value="true" />
+      <created>1723168681870</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1723168681870</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: UserProfileResponseDto 추가">
+      <option name="closed" value="true" />
+      <created>1723168710234</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1723168710234</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: UserLogout 로직 구현">
+      <option name="closed" value="true" />
+      <created>1723168737380</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1723168737380</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: 로그인, 로그아웃, 회원프로필 조회 기능 구현">
+      <option name="closed" value="true" />
+      <created>1723168786257</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1723168786257</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: KakaoId를 통한 조회 기능 구현">
+      <option name="closed" value="true" />
+      <created>1723168808700</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1723168808700</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat: KakaoId를 통한 조회 기능 구현">
+      <option name="closed" value="true" />
+      <created>1723168813042</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1723168813042</updated>
+    </task>
+    <task id="LOCAL-00025" summary="refactor: Repository 변경">
+      <option name="closed" value="true" />
+      <created>1723288747511</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1723288747511</updated>
+    </task>
+    <task id="LOCAL-00026" summary="refactor: Repository 변경">
+      <option name="closed" value="true" />
+      <created>1727000399178</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1727000399178</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat: ..">
+      <option name="closed" value="true" />
+      <created>1728037700259</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1728037700260</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat: hello">
+      <option name="closed" value="true" />
+      <created>1728037813132</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1728037813132</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Brewery 엔티티 추가&#10;&#10;양조장 객체" />
+    <MESSAGE value="feat: BreweryInfo 엔티티 추가&#10;&#10;양조장 정보 객체" />
+    <MESSAGE value="feat: Booking 엔티티 추가&#10;&#10;예약 객체" />
+    <MESSAGE value="feat: Badge 엔티티 추가&#10;&#10;뱃지 객체" />
+    <MESSAGE value="feat: User 엔티티 수정&#10;&#10;뱃지, 예약 프로퍼티 추가" />
+    <MESSAGE value="fix: User 엔티티 mappedBy 수정 &#10;&#10;brewery -&gt; User 로 변경" />
+    <MESSAGE value="refactor: Brewery 프로퍼티 네임 수정&#10;&#10;booking -&gt; bookings" />
+    <MESSAGE value="feat: Base Setting" />
+    <MESSAGE value="feat: User constructor 추가&#10;&#10;회원가입 시 사용할 constructor" />
+    <MESSAGE value="feat: User Service 구현&#10;&#10;유저 생성 기능 구현" />
+    <MESSAGE value="feat: User Repository 구현&#10;&#10;유저 저장 기능 구현" />
+    <MESSAGE value="feat: User Controller 추가&#10;&#10;카카오 + 회원가입 로직 구현" />
+    <MESSAGE value="feat: Kakao Service 추가&#10;&#10;Access 토큰을 통한 카카오 유저 정보 조회 기능 구현" />
+    <MESSAGE value="feat: Kakao 관련 dto 추가" />
+    <MESSAGE value="feat: User 생성 Dto 구현" />
+    <MESSAGE value="feat: BaseResponseStatus 추가&#10;&#10;존재하지 않는 회원 오류 추가" />
+    <MESSAGE value="feat: LoginDto 추가" />
+    <MESSAGE value="feat: LoginResponseDto 추가" />
+    <MESSAGE value="feat: UserProfileResponseDto 추가" />
+    <MESSAGE value="feat: UserLogout 로직 구현" />
+    <MESSAGE value="feat: 로그인, 로그아웃, 회원프로필 조회 기능 구현" />
+    <MESSAGE value="feat: KakaoId를 통한 조회 기능 구현" />
+    <MESSAGE value="refactor: Repository 변경" />
+    <MESSAGE value="feat: .." />
+    <MESSAGE value="feat: hello" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: hello" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
