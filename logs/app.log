@@ -1,0 +1,116 @@
+2024-10-04T18:21:47.004+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] c.k.k.KkoallaSpringApplication           : Starting KkoallaSpringApplication using Java 21.0.1 with PID 23744 (/Users/minsu/Desktop/spring-project/back-end/kkoalla-spring/build/classes/java/main started by minsu in /Users/minsu/Desktop/spring-project/back-end/kkoalla-spring)
+2024-10-04T18:21:47.007+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] c.k.k.KkoallaSpringApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-10-04T18:21:47.007+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] c.k.k.KkoallaSpringApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-10-04T18:21:47.025+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-04T18:21:47.025+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-04T18:21:47.305+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04T18:21:47.314+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2024-10-04T18:21:47.562+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-04T18:21:47.568+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-04T18:21:47.568+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-10-04T18:21:47.584+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-04T18:21:47.584+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 559 ms
+2024-10-04T18:21:47.652+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04T18:21:47.683+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-10-04T18:21:47.696+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-04T18:21:47.827+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04T18:21:47.840+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-04T18:21:48.199+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43a5c47a
+2024-10-04T18:21:48.200+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-04T18:21:48.663+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04T18:21:48.668+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table badge drop foreign key FKa219qf54i4968xf1r5rl8fylp
+2024-10-04T18:21:48.853+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033708853 | took 184ms | statement | connection 1| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table badge drop foreign key FKa219qf54i4968xf1r5rl8fylp
+alter table badge drop foreign key FKa219qf54i4968xf1r5rl8fylp;
+2024-10-04T18:21:48.853+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table booking drop foreign key FKab8qkm6kei5f4ejsfu9vmtc9h
+2024-10-04T18:21:48.896+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033708896 | took 42ms | statement | connection 1| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table booking drop foreign key FKab8qkm6kei5f4ejsfu9vmtc9h
+alter table booking drop foreign key FKab8qkm6kei5f4ejsfu9vmtc9h;
+2024-10-04T18:21:48.896+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table booking drop foreign key FK7udbel7q86k041591kj6lfmvw
+2024-10-04T18:21:48.926+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033708926 | took 29ms | statement | connection 1| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table booking drop foreign key FK7udbel7q86k041591kj6lfmvw
+alter table booking drop foreign key FK7udbel7q86k041591kj6lfmvw;
+2024-10-04T18:21:48.926+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table brewery drop foreign key FK540bxt3a8kg6y945kxrlmaav9
+2024-10-04T18:21:48.958+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033708958 | took 32ms | statement | connection 1| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table brewery drop foreign key FK540bxt3a8kg6y945kxrlmaav9
+alter table brewery drop foreign key FK540bxt3a8kg6y945kxrlmaav9;
+2024-10-04T18:21:48.959+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : drop table if exists badge
+2024-10-04T18:21:49.011+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709011 | took 52ms | statement | connection 1| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+drop table if exists badge
+drop table if exists badge;
+2024-10-04T18:21:49.011+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : drop table if exists booking
+2024-10-04T18:21:49.043+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709043 | took 31ms | statement | connection 1| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+drop table if exists booking
+drop table if exists booking;
+2024-10-04T18:21:49.044+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : drop table if exists brewery
+2024-10-04T18:21:49.068+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709068 | took 24ms | statement | connection 1| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+drop table if exists brewery
+drop table if exists brewery;
+2024-10-04T18:21:49.068+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : drop table if exists brewery_info
+2024-10-04T18:21:49.099+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709099 | took 31ms | statement | connection 1| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+drop table if exists brewery_info
+drop table if exists brewery_info;
+2024-10-04T18:21:49.099+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : drop table if exists users
+2024-10-04T18:21:49.138+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709138 | took 38ms | statement | connection 1| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+drop table if exists users
+drop table if exists users;
+2024-10-04T18:21:49.142+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : create table badge (bade_id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), user_id bigint, name enum ('A','B','C','NONE'), primary key (bade_id)) engine=InnoDB
+2024-10-04T18:21:49.212+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709212 | took 69ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+create table badge (bade_id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), user_id bigint, name enum ('A','B','C','NONE'), primary key (bade_id)) engine=InnoDB
+create table badge (bade_id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), user_id bigint, name enum ('A','B','C','NONE'), primary key (bade_id)) engine=InnoDB;
+2024-10-04T18:21:49.213+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : create table booking (brewery_id integer, people_count integer not null, booking_id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), user_id bigint, booking_date varchar(255), phone varchar(255), user_name varchar(255), status enum ('A','B','C'), primary key (booking_id)) engine=InnoDB
+2024-10-04T18:21:49.253+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709253 | took 40ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+create table booking (brewery_id integer, people_count integer not null, booking_id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), user_id bigint, booking_date varchar(255), phone varchar(255), user_name varchar(255), status enum ('A','B','C'), primary key (booking_id)) engine=InnoDB
+create table booking (brewery_id integer, people_count integer not null, booking_id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), user_id bigint, booking_date varchar(255), phone varchar(255), user_name varchar(255), status enum ('A','B','C'), primary key (booking_id)) engine=InnoDB;
+2024-10-04T18:21:49.254+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : create table brewery (brewery_id integer not null auto_increment, brewery_info_id bigint, created_at datetime(6), updated_at datetime(6), primary key (brewery_id)) engine=InnoDB
+2024-10-04T18:21:49.294+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709294 | took 39ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+create table brewery (brewery_id integer not null auto_increment, brewery_info_id bigint, created_at datetime(6), updated_at datetime(6), primary key (brewery_id)) engine=InnoDB
+create table brewery (brewery_id integer not null auto_increment, brewery_info_id bigint, created_at datetime(6), updated_at datetime(6), primary key (brewery_id)) engine=InnoDB;
+2024-10-04T18:21:49.294+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : create table brewery_info (tour_cost integer, brewery_info_id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), alcohol_type varchar(255), brewery_address varchar(255), brewery_name varchar(255), contact_number varchar(255), content varchar(255), duration varchar(255), location varchar(255), program_name varchar(255), reservation_available varchar(255), website varchar(255), primary key (brewery_info_id)) engine=InnoDB
+2024-10-04T18:21:49.345+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709345 | took 50ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+create table brewery_info (tour_cost integer, brewery_info_id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), alcohol_type varchar(255), brewery_address varchar(255), brewery_name varchar(255), contact_number varchar(255), content varchar(255), duration varchar(255), location varchar(255), program_name varchar(255), reservation_available varchar(255), website varchar(255), primary key (brewery_info_id)) engine=InnoDB
+create table brewery_info (tour_cost integer, brewery_info_id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), alcohol_type varchar(255), brewery_address varchar(255), brewery_name varchar(255), contact_number varchar(255), content varchar(255), duration varchar(255), location varchar(255), program_name varchar(255), reservation_available varchar(255), website varchar(255), primary key (brewery_info_id)) engine=InnoDB;
+2024-10-04T18:21:49.345+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : create table users (created_at datetime(6), kakao_id bigint not null, updated_at datetime(6), user_id bigint not null auto_increment, nickname varchar(10) not null, email varchar(45) not null, phone varchar(255) not null, primary key (user_id)) engine=InnoDB
+2024-10-04T18:21:49.406+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709406 | took 60ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+create table users (created_at datetime(6), kakao_id bigint not null, updated_at datetime(6), user_id bigint not null auto_increment, nickname varchar(10) not null, email varchar(45) not null, phone varchar(255) not null, primary key (user_id)) engine=InnoDB
+create table users (created_at datetime(6), kakao_id bigint not null, updated_at datetime(6), user_id bigint not null auto_increment, nickname varchar(10) not null, email varchar(45) not null, phone varchar(255) not null, primary key (user_id)) engine=InnoDB;
+2024-10-04T18:21:49.406+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table brewery add constraint UKtd9ld25wom14t2an9f5mtnnbs unique (brewery_info_id)
+2024-10-04T18:21:49.455+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709455 | took 48ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table brewery add constraint UKtd9ld25wom14t2an9f5mtnnbs unique (brewery_info_id)
+alter table brewery add constraint UKtd9ld25wom14t2an9f5mtnnbs unique (brewery_info_id);
+2024-10-04T18:21:49.458+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table users add constraint UK2ty1xmrrgtn89xt7kyxx6ta7h unique (nickname)
+2024-10-04T18:21:49.500+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709500 | took 41ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table users add constraint UK2ty1xmrrgtn89xt7kyxx6ta7h unique (nickname)
+alter table users add constraint UK2ty1xmrrgtn89xt7kyxx6ta7h unique (nickname);
+2024-10-04T18:21:49.500+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2024-10-04T18:21:49.533+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709533 | took 32ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+alter table users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email);
+2024-10-04T18:21:49.533+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table users add constraint UKdu5v5sr43g5bfnji4vb8hg5s3 unique (phone)
+2024-10-04T18:21:49.568+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709568 | took 34ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table users add constraint UKdu5v5sr43g5bfnji4vb8hg5s3 unique (phone)
+alter table users add constraint UKdu5v5sr43g5bfnji4vb8hg5s3 unique (phone);
+2024-10-04T18:21:49.568+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table badge add constraint FKa219qf54i4968xf1r5rl8fylp foreign key (user_id) references users (user_id)
+2024-10-04T18:21:49.646+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709646 | took 77ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table badge add constraint FKa219qf54i4968xf1r5rl8fylp foreign key (user_id) references users (user_id)
+alter table badge add constraint FKa219qf54i4968xf1r5rl8fylp foreign key (user_id) references users (user_id);
+2024-10-04T18:21:49.646+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table booking add constraint FKab8qkm6kei5f4ejsfu9vmtc9h foreign key (brewery_id) references brewery (brewery_id)
+2024-10-04T18:21:49.728+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709728 | took 81ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table booking add constraint FKab8qkm6kei5f4ejsfu9vmtc9h foreign key (brewery_id) references brewery (brewery_id)
+alter table booking add constraint FKab8qkm6kei5f4ejsfu9vmtc9h foreign key (brewery_id) references brewery (brewery_id);
+2024-10-04T18:21:49.728+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table booking add constraint FK7udbel7q86k041591kj6lfmvw foreign key (user_id) references users (user_id)
+2024-10-04T18:21:49.808+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709808 | took 79ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table booking add constraint FK7udbel7q86k041591kj6lfmvw foreign key (user_id) references users (user_id)
+alter table booking add constraint FK7udbel7q86k041591kj6lfmvw foreign key (user_id) references users (user_id);
+2024-10-04T18:21:49.809+09:00 DEBUG 23744 --- [kkoalla-spring] [restartedMain] org.hibernate.SQL                        : alter table brewery add constraint FK540bxt3a8kg6y945kxrlmaav9 foreign key (brewery_info_id) references brewery_info (brewery_info_id)
+2024-10-04T18:21:49.879+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] p6spy                                    : #1728033709879 | took 69ms | statement | connection 2| url jdbc:mysql://kkoalla.c90sq66qibr9.ap-northeast-2.rds.amazonaws.com:3306/kkoalla
+alter table brewery add constraint FK540bxt3a8kg6y945kxrlmaav9 foreign key (brewery_info_id) references brewery_info (brewery_info_id)
+alter table brewery add constraint FK540bxt3a8kg6y945kxrlmaav9 foreign key (brewery_info_id) references brewery_info (brewery_info_id);
+2024-10-04T18:21:49.881+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04T18:21:50.046+09:00  WARN 23744 --- [kkoalla-spring] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04T18:21:50.166+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-04T18:21:50.181+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-04T18:21:50.186+09:00  INFO 23744 --- [kkoalla-spring] [restartedMain] c.k.k.KkoallaSpringApplication           : Started KkoallaSpringApplication in 3.339 seconds (process running for 3.632)
+2024-10-04T18:21:54.306+09:00  INFO 23744 --- [kkoalla-spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04T18:21:54.307+09:00  INFO 23744 --- [kkoalla-spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-04T18:21:54.380+09:00  INFO 23744 --- [kkoalla-spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
